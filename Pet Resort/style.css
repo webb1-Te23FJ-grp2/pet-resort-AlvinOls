@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+
+.daddy{
+    display: grid;
+   grid-template-columns: repeat(12,1fr);
+    grid-template-areas:"menu menu menu menu menu menu menu menu menu menu menu menu"
+                        "bigimg bigimg" ;
+}
+
+.menu{
+grid-template-areas: menu;
+}
+.bigimg{
+    grid-template-areas: bigimg;
+}
+.october{
+    grid-template-areas: october;
+}
+.partners{
+    grid-template-areas: partners;
+}
+.merch{
+    grid-template-areas: merch;
+}
+.buddies{
+    grid-template-areas: buddies;
+}
+.finedining{
+    grid-template-areas: finedining;
+}
