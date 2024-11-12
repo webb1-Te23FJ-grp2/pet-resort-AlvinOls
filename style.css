@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+}
+body{
+
+background-color: rgb(240,240,240);
+}
+
+.unc{
+  max-width: 1200px;
+}
+
+.daddy{
+   
+    display: grid;
+    grid-template-columns: repeat(12,1fr); 
+    grid-template-rows: 100px 600px;
+ 
+    grid-template-areas:"menu menu menu menu menu menu menu menu menu menu menu menu"
+                        "bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg"
+                        "october october october october october october october october october partners partners partners"
+                        "october october october october october october october october october partners partners partners"
+                        "merch merch merch buddies buddies buddies finedining finedining finedining partners partners partners"
+                         ;
+}
+div{
+    margin: 10px;
+    
+}
+
+.menu{
+grid-area: menu;
+display: flex;
+justify-content: flex-start;
+}
+.bigimg{
+    background-color: white;
+    background-image: url("/img/happiest-dog.webp");
+   /* background-color: aquamarine; */
+    grid-area: bigimg;
+    border-radius: 20px;
+    display: flex;
+    align-items: end;
+    /* justify-content: start; */
+    border-radius: 10px;
+}
+.october{
+    grid-area: october;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+}
+.partners{
+    grid-area: partners;
+    background-color: white;
+    border-radius: 10px;
+}
+.merch{
+    grid-area: merch;
+    background-color: white;
+    border-radius: 10px;
+}
+.buddies{
+    grid-area: buddies;
+    background-color: white;
+    border-radius: 10px;
+}
+.finedining{
+    grid-area: finedining;
+    background-color: white;
+    border-radius: 10px;
+}
+img{
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 10px;
+}
+h2{
+    color:rgb(0, 0, 0);
+    margin: 20px;
+}
+h1{
+    align-content: center;
+}
+p{
+    color: white;
+}
+.imgtxt{
+    color: white;
+}
