@@ -14,13 +14,12 @@ background-color: rgb(240,240,240);
    
     display: grid;
     grid-template-columns: repeat(12,1fr); 
-    grid-template-rows: 100px 600px;
- 
-    grid-template-areas:"menu menu menu menu menu menu menu menu menu menu menu menu"
+    grid-template-rows: 100px 600px 290px 435px;
+    grid-template-areas:"menu menu menu menu2 menu2 menu2 menu2 menu2 menu2 menu2 menu2 menu2"
                         "bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg"
                         "october october october october october october october october october partners partners partners"
-                        "october october october october october october october october october partners partners partners"
                         "merch merch merch buddies buddies buddies finedining finedining finedining partners partners partners"
+                       
                          ;
 }
 div{
@@ -33,6 +32,11 @@ grid-area: menu;
 display: flex;
 justify-content: flex-start;
 }
+.menu2{
+grid-area: menu2;
+display: flex;
+justify-content: flex-end;
+}
 .bigimg{
     background-color: white;
     background-image: url("/img/happiest-dog.webp");
@@ -40,9 +44,11 @@ justify-content: flex-start;
     grid-area: bigimg;
     border-radius: 20px;
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    justify-content: end;
     /* justify-content: start; */
     border-radius: 10px;
+    padding: 20px;
 }
 .october{
     grid-area: october;
@@ -55,6 +61,10 @@ justify-content: flex-start;
     grid-area: partners;
     background-color: white;
     border-radius: 10px;
+    display: grid;
+    justify-items: center;
+    grid-auto-rows: 82px;
+    grid-template-rows: 60px;
 }
 .merch{
     grid-area: merch;
@@ -73,8 +83,9 @@ justify-content: flex-start;
 }
 img{
     border-radius: 10px;
-    object-fit: cover;
-    margin: 10px;
+    margin: 15px;
+    max-width: 100%;
+    max-height: 100%;
 }
 h2{
     color:rgb(0, 0, 0);
@@ -83,9 +94,26 @@ h2{
 h1{
     align-content: center;
 }
-p{
-    color: white;
-}
+
 .imgtxt{
     color: white;
+}
+p{
+    color: black;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-content: center;
+}
+.menutxt{
+    color: black;
+}
+
+#grooming{
+    max-width: 50%;
+}
+
+.partnerimg{
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
 }
