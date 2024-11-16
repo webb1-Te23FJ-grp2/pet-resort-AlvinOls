@@ -4,23 +4,26 @@
 body{
 
 background-color: rgb(240,240,240);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+height: 100%;
 }
 
 .unc{
   max-width: 1200px;
+  height: auto;
 }
 
 .daddy{
    
     display: grid;
     grid-template-columns: repeat(12,1fr); 
-    grid-template-rows: 100px 600px 290px 435px;
+    grid-template-rows: 100px 600px 300px auto;
     grid-template-areas:"menu menu menu menu2 menu2 menu2 menu2 menu2 menu2 menu2 menu2 menu2"
                         "bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg bigimg"
                         "october october october october october october october october october partners partners partners"
                         "merch merch merch buddies buddies buddies finedining finedining finedining partners partners partners"
-                       
                          ;
+height: auto;
 }
 div{
     margin: 10px;
